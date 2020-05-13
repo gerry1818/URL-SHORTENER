@@ -1,0 +1,19 @@
+<%- include("header") -%>
+
+<body>
+  <div class="container-fluid pt-5 pb-5 p-3 navbar-light bg-light">
+      <div class="section_header text-center mb-5 mb-4">
+          <h1>URL Shrinker</h1>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-12 index">
+                  <form action="api/shorturl/new" method="POST" class="my-4 form-inline">
+                      <input id="url_input" type="text" name="url"  class="form-control col mr-2">
+                      <input type="submit" value="POST URL" class="btn btn-success" />
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>

@@ -1,0 +1,15 @@
+<%- include("header") -%>
+
+<script>
+  document.getElementById("path").innerHTML = window.location.hostname;
+</script>
+
+<div class="container text-center res">
+  <h3>Your Shortned URL</h3>
+  <p><%= urlobj.url %> </p>
+  <a href=" <%= path %>"><%= path %></a>
+  <br/>
+      <form action="/" method="get" class="my-4 form-inline">
+        <input type="submit" value="BACK HOME" class="btn btn-success" />
+      </form>
+</div>
